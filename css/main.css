@@ -1,3 +1,68 @@
+@font-face {
+  font-family: "Canela Text";
+  src: url("./fonts/CanelaText-Black.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Canela Text";
+  src: url("./fonts/CanelaText-Regular.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Canela Text";
+  src: url("./fonts/CanelaText-Bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Canela Text";
+  src: url("./fonts/CanelaText-RegularNo2.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Canela Text";
+  src: url("./fonts/CanelaText-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/inter-v13-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  src: url("./fonts/inter-v13-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./fonts/inter-v13-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  src: url("./fonts/inter-v13-latin-900.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -114,7 +179,8 @@ a{
   font-weight: 500;
   line-height: 76.80px;
   margin-bottom: 20px;
-  width: 544px;
+  width: 530px;
+  font-family: Canela;
 }
 .hero__left-title span{
   color: #D6EF0E;
@@ -136,6 +202,7 @@ a{
 }
 .hero__left-list__item{
   padding-right: 28px;
+  font-family: Canela;
   border-right: 1px solid #D6EF0E;
 
 }
@@ -219,7 +286,8 @@ a{
   font-weight: 500;
   line-height: 57.60px;
   margin-bottom: 64px;
-  width: 560px;
+  width: 520px;
+  font-family: Canela;
 }
 .amazing__title span{
   color: #D6EF0E;
@@ -289,7 +357,8 @@ a{
   font-weight: 500;
   line-height: 57.60px;
   margin-bottom: 20px;
-  width: 426px;
+  width: 406px;
+  font-family: Canela;
 }
 .Create-and-sell__card-title span{
   color: #D6EF0E;
@@ -314,6 +383,7 @@ a{
   font-weight: 500;
   line-height: 57.60px;
   width: 350px;
+  font-family: Canela;
   margin-bottom: 64px;
 }
 .popular__artists-start__title span{
@@ -380,4 +450,46 @@ a{
 .popular__artists-card__group-title{
   font-weight: 700;
   line-height: 19.20px;
+}
+
+.subscribe{
+  padding-top: 92px;
+  padding-bottom: 92px;
+}
+.subscribe__start{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.subscribe__card-title{
+  width: 520px;
+  font-size: 48px;
+  font-family: Canela;
+  font-weight: 500;
+  line-height: 57.60px;
+  margin-bottom: 20px;
+}
+.subscribe__card-title span {
+  color: #D6EF0E;
+}
+.subscribe__card-text{
+  width: 520px;
+  margin-bottom: 40px;
+  line-height: 25.60px
+}
+.Subscribe__card-inp{
+  width: 520px;
+  padding: 16px 0 16px 24px;
+  line-height: 25.60px;
+  background-color: #131E3A; 
+  border-radius: 8px; 
+  border: 1px solid #131E3A;
+}
+.Subscribe__card-btn{
+  padding: 12px 40px;
+  margin-left: -139px;
+  background-color: #D6EF0E;
+  color: #fff;
+  border-radius: 5px;
+  border: 1px solid #D6EF0E;
 }
