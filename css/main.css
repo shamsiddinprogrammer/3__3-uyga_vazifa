@@ -299,3 +299,85 @@ a{
   margin-bottom: 40px;
   ine-height: 25.60px;
 }
+
+.popular__artists{
+  padding-top: 92px;
+  padding-bottom: 92px;
+}
+.popular__artists-start{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.popular__artists-start__title{
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 57.60px;
+  width: 350px;
+  margin-bottom: 64px;
+}
+.popular__artists-start__title span{
+  color: #D6EF0E
+}
+.popular__artists-img{
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  align-items: start;
+}
+.popular__artists-img__group{
+  /* display: flex; */
+}
+.popular__artists-img__group img{
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.popular__artists-img{
+  position: relative;
+}
+.popular__artists-card{
+  position: absolute;
+  display: flex;
+  align-items: start;
+  top: 240px;
+  left: 24px;
+}
+.popular__artists-card_two{
+  position: absolute;
+  display: flex;
+  align-items: start;
+  top: 240px;
+  left: 352px;
+}
+.popular__artists-card-Four{
+  position: absolute;
+  display: flex;
+  align-items: start;
+  top: 570px;
+  left: 24px;
+}
+.popular__artists-card-Five{
+  position: absolute;
+  display: flex;
+  align-items: start;
+  top: 570px;
+  left: 462px;
+}
+.popular__artists-card__Three{
+  position: absolute;
+  display: flex;
+  align-items: start;
+  gap: 10px;
+  top: 580px;
+  left: 912px;
+}
+.popular__artists-card__group-text{
+  font-size: 14px;
+  line-height: 22.40px;
+  margin-bottom: 5px;
+}
+.popular__artists-card__group-title{
+  font-weight: 700;
+  line-height: 19.20px;
+}
