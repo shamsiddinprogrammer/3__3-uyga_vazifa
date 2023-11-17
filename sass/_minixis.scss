@@ -1,0 +1,10 @@
+.brand__btn {
+  color: $primary-color;
+  padding: 12px 39px;
+  border: 2px solid $primary-btn-color;
+  background-color: $primary-btn-color;
+}
+.brand__btn:hover {
+  color: $primary-btn-color;
+  background-color: transparent;
+}
