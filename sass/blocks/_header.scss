@@ -42,6 +42,9 @@
     color: $primary-btn-color;
     background-color: transparent;
   }
+  &__btn:active {
+    background-color: $primary-title-color;
+  }
   &__menu {
     height: 100%;
     position: relative;

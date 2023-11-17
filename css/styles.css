@@ -69,6 +69,10 @@ main {
   background-color: transparent;
 }
 
+.brand__btn:active {
+  background-color: #939CAA;
+}
+
 .header {
   width: 100%;
   padding-top: 34px;
@@ -111,6 +115,9 @@ main {
 .header__btn:hover {
   color: #FCB72B;
   background-color: transparent;
+}
+.header__btn:active {
+  background-color: #495567;
 }
 .header__menu {
   height: 100%;
@@ -383,6 +390,7 @@ main {
   color: #495567;
 }
 .services__wrapper-text {
+  font-family: Lexend Deca;
   max-width: 350px;
   font-size: 15px;
   line-height: 25px;
@@ -436,6 +444,100 @@ main {
     font-weight: 700;
   }
 }
+.registration {
+  padding-top: 102px;
+  padding-bottom: 102px;
+  background-color: #495567;
+}
+.registration__start {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.registration__start-title {
+  width: 415px;
+  color: #ffffff;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -2.143px;
+}
+.registration__wrapper {
+  display: flex;
+  gap: 18px;
+}
+.registration__wrapper-link {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding: 8px 16px;
+  background-color: #E5ECF4;
+  border-radius: 4px;
+  color: #495567;
+}
+.registration__wrapper-link:hover {
+  background-color: #FCB72B;
+}
+.registration__wrapper-text {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: -0.446px;
+}
+.registration__wrapper-title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -0.893px;
+}
+
+@media only screen and (max-width: 806px) {
+  .registration {
+    padding-top: 62px;
+    padding-bottom: 62px;
+    background-color: #495567;
+  }
+  .registration__start {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .registration__start-title {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+}
+@media only screen and (max-width: 426px) {
+  .registration {
+    padding-top: 88px;
+    padding-bottom: 88px;
+    background-color: #495567;
+  }
+  .registration__start {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .registration__start-title {
+    width: 100%;
+    max-width: 311px;
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: -1.429px;
+  }
+  .registration__wrapper img {
+    width: 15px;
+  }
+  .registration__wrapper-text {
+    font-size: 6px;
+  }
+  .registration__wrapper-title {
+    font-size: 12px;
+  }
+}
 .footer {
   padding-top: 35px;
   padding-bottom: 35px;
@@ -461,6 +563,10 @@ main {
 .footer__list-link:hover {
   color: #FCB72B;
   border-bottom: 1px solid #FCB72B;
+}
+.footer__list-link:active {
+  color: #ffffff;
+  border-bottom: 1px solid #ffffff;
 }
 .footer__right {
   display: flex;
