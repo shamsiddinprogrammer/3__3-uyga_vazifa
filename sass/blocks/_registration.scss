@@ -1,4 +1,4 @@
-&__registration {
+.registration {
   padding-top: 102px;
   padding-bottom: 102px;
   background-color: $primary-title-color;
@@ -77,7 +77,7 @@
         font-style: normal;
         font-weight: 700;
         line-height: 32px;
-        letter-spacing: -1.429px
+        letter-spacing: -1.429px;
       }
     }
     &__wrapper {
