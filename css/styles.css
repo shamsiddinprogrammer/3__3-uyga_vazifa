@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0;
+  font-family: "Space Mono", monospace;
+  font-weight: 500;
+  background-color: #ffffff;
+  color: black;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 1150px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.max_container {
+  width: 100%;
+  max-width: 1550px;
+  margin-right: auto;
+  margin-left: auto;
+  background-image: url("../img/joy_stick.png");
+  background-repeat: no-repeat;
+  background-position: 874px 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.header {
+  width: 100%;
+  position: fixed;
+  padding-top: 34px;
+  padding-bottom: 34px;
+  background-color: #ffffff;
+  z-index: 222222;
+}
+.header__start {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.header__right {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__list {
+  display: flex;
+  gap: 32px;
+  flex: 1 1 0%;
+}
+.header__list-link {
+  color: #939CAA;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 25px;
+}
+.header__list-link:hover {
+  color: #FCB72B;
+  border-bottom: 2px solid #FCB72B;
+}
+.header__btn {
+  color: #ffffff;
+  padding: 12px 39px;
+  border: 2px solid #FCB72B;
+  background-color: #FCB72B;
+}
+.header__btn:hover {
+  color: #FCB72B;
+  background-color: transparent;
+}
+.header__menu {
+  height: 100%;
+  position: relative;
+  display: none;
+  width: 40px;
+  height: 40px;
+  background-color: #ffffff;
+  border: none;
+}
+.header__menu-span {
+  position: absolute;
+  width: 30px;
+  height: 4px;
+  background-color: #FCB72B;
+  left: 5px;
+  transition: transform 0.5s, opacity 0.5s, background-color 0.5s;
+}
+.header__menu-span:nth-child(1) {
+  transform: translateY(-10px);
+}
+.header__menu-span:nth-child(3) {
+  transform: translateY(10px);
+}
+.open .header__menu-span:nth-child(1) {
+  transform: translateY(0) rotate(45deg);
+}
+.open .header__menu-span:nth-child(2) {
+  opacity: 0;
+}
+.open .header__menu-span:nth-child(3) {
+  transform: translateY(0) rotate(-45deg);
+}
+
+@media only screen and (max-width: 617px) {
+  .header {
+    padding-top: 22px;
+    padding-bottom: 22px;
+    height: 100%;
+  }
+  .header__img {
+    text-align: center;
+    margin-left: 70px;
+  }
+  .header__menu {
+    display: block;
+  }
+  .header__right {
+    position: relative;
+    height: 100vh;
+    padding-right: 20px;
+    transition: transform 0.5s;
+    max-width: 300px;
+    position: absolute;
+    display: block;
+    left: -300px;
+    top: 75px;
+    height: 100%;
+    background-color: #333A44;
+    padding: 100px 20px 20px 20px;
+  }
+  .header__list {
+    display: block;
+    flex: 1 1 0%;
+  }
+  .header__list-link {
+    width: 90px;
+    color: #ffffff;
+    font-size: 18px;
+    display: block;
+    margin-bottom: 24px;
+  }
+  .open .header__right {
+    transform: translateX(100%);
+  }
+  .header__btn {
+    position: absolute;
+    width: 93%;
+    left: 10px;
+    bottom: 90px;
+  }
+}/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0;
+  font-family: 'Space Mono', monospace;
+  font-weight: 500;
+  background-color: #ffffff;
+  color: black;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+ul{
+  padding-left: 0;
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
