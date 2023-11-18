@@ -1,7 +1,13 @@
 .registration {
+  position: relative;
   padding-top: 102px;
   padding-bottom: 102px;
   background-color: $primary-title-color;
+  background-image: url("../../icon/Group12.svg");
+  background-repeat: no-repeat;
+  margin-right: 1px;
+  background-position-x: right;
+  background-position-y: bottom;
   &__start {
     display: flex;
     justify-content: space-between;
@@ -42,6 +48,7 @@
       letter-spacing: -0.893px;
     }
   }
+  
 }
 @media only screen and (max-width: 806px) {
   .registration {
