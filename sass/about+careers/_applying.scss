@@ -1,0 +1,46 @@
+.applying {
+  padding-bottom: 140px;
+  &__card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $primary-bg-color;
+    padding: 32px 64px 32px 40px;
+    margin-bottom: 24px;
+    &-title {
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 28px;
+      color: $primary-title-color;
+      margin-bottom: 5px;
+    }
+    &-text {
+      font-size: 15px;
+      font-family: Lexend Deca;
+      font-weight: 400;
+      line-height: 25px;
+      color: $primary-text-color;
+    }
+    &-btn {
+      padding: 15px 68px;
+    }
+  }
+}
+@media only screen and (max-width: 555px) {
+  .applying {
+    padding-bottom: 80px;
+    &__card {
+      flex-direction: column;
+      text-align: center;
+      padding: 32px;
+      &-title {
+        font-size: 18px;
+        margin-bottom: 5px;
+      }
+      &-btn {
+        width: 100%;
+        margin-top: 16px;
+      }
+    }
+  }
+}
