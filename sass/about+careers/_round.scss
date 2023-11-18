@@ -1,0 +1,143 @@
+.round {
+  padding-top: 100px;
+  overflow-x: hidden;
+  &__img {
+    max-width: 445px;
+    overflow: hidden;
+    border-radius: 50%;
+  }
+  &__wrapper{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 160px;
+    align-items: center;
+    gap: 30px;
+    &-icon1 {
+      position: absolute;
+      right: -210px;
+      top: 300px;
+      z-index: 5555;
+    }
+    &-maks1 {
+      position: absolute;
+      right: -210px;
+    }
+    &-icon2 {
+      position: absolute;
+      z-index: 5555;
+      left: -205px;
+      top: 0;
+    }
+    &-maks2 {
+      position: absolute;
+      left: -205px;
+      top: 0;
+    }
+  }
+  &__wrapper:nth-child(odd) {
+    flex-direction: row-reverse;
+  }
+  &__right {
+    &-title {
+      font-size: 48px;
+      font-weight: 700;
+      line-height: 48px;
+      letter-spacing: -2.143px;
+      margin-bottom: 24px;
+      max-width: 445px;
+      color: $primary-title-color;
+    }
+    &-text {
+      max-width: 445px;
+      margin-bottom: 40px;
+      font-family: Lexend Deca;
+      font-size: 15px;
+      line-height: 25px;
+    }
+  }
+  &__img1 {
+    border-radius: 50%;
+  }
+
+}
+@media only screen and (max-width: 800px) {
+  .round {
+    &__wrapper {
+      flex-direction: column;
+      gap: 56px;
+      text-align: center;
+      &-icon1 {
+        right: -20px;
+        top: 300px;
+        z-index: 5555;
+      }
+      &-maks1 {
+        right: -20px;
+      }
+      &-icon2 {
+        z-index: 5555;
+        left: -20px;
+        top: 0;
+      }
+      &-maks2 {
+        position: absolute;
+        left: -20px;
+        top: 0;
+      }
+    }
+    &__wrapper:nth-child(odd) {
+      flex-direction: column;
+    }
+  }
+}
+@media only screen and (max-width: 645px) {
+  .round {
+    &__wrapper {
+      &-maks1 {
+        display: none;
+      }
+      &-maks2 {
+        display: none;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 400px) {
+  .round {
+    &__img {
+      max-width: 300px;
+    }
+    &__wrapper{
+      margin-bottom: 100px;
+      &-icon1 {
+        width: 100%;
+        right: -20px;
+        top: 200px;
+      }
+      &-icon2 {
+        left: -100px;
+        top: 0;
+      }
+    }
+    &__right {
+      &-title {
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 32px;
+        letter-spacing: -1.429px;
+        margin-bottom: 32px;
+        max-width: 311px;
+      }
+      &-text {
+        max-width: 311px;
+        margin-bottom: 30px;
+      }
+    }
+    &__img1 {
+      border-radius: 50%;
+    }
+  
+  }
+}

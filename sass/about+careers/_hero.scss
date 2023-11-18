@@ -1,0 +1,24 @@
+.hero {
+  overflow-x: hidden;
+  position: relative;
+  padding-top: 73px;
+  padding-bottom: 72px;
+  background-image: url("../../images/Bitmap9.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: $primary-color;
+  &__title {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 56px;
+    letter-spacing: -2.5px;
+  }
+}
+@media only screen and (max-width: 520px) {
+  .hero {
+    &__title {
+      text-align: center;
+    }
+  }
+}

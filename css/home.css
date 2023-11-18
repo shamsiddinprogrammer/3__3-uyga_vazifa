@@ -210,7 +210,7 @@ main {
   position: relative;
   padding-top: 153px;
   padding-bottom: 152px;
-  background-image: url("../../images/Bitmap.png");
+  background-image: url("../../images/Bitmap2.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -747,4 +747,4 @@ main {
     align-items: center;
     gap: 25px;
   }
-}/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=home.css.map */
