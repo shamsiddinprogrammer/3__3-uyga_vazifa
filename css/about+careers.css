@@ -106,6 +106,10 @@ main {
   color: #FCB72B;
   border-bottom: 2px solid #FCB72B;
 }
+.header__list-active {
+  color: #FCB72B;
+  border-bottom: 3px solid #FCB72B;
+}
 .header__btn {
   color: #ffffff;
   padding: 12px 39px;

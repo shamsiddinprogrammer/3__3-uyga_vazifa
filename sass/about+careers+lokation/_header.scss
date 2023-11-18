@@ -31,6 +31,10 @@
       color: $primary-btn-color;
       border-bottom: 2px solid $primary-btn-color;
     }
+    &-active{
+      color: $primary-btn-color;
+      border-bottom: 3px solid $primary-btn-color;
+    }
   }
   &__btn {
     color: $primary-color;
